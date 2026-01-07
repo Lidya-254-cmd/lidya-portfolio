@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(204, 204, 211), rgb(229, 212, 212))no-repeat;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 30%);
+}
+
+.buttons {
+  margin: 1rem 1rem;
+
+}
+
+.buttons button {
+  font-size: 4rem;
+  text-align: center;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin: 0.5rem 5px;
+  background-color: hsl(200, 100%, 60%);
+  border: none;
+}
+
+#playerDisplay,
+#computerDisplay {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+#resultDisplay {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#final {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 3rem;
+
+}
+
+#loses,
+#wins {
+  margin: 0 2rem;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="todolist-advanced-function.css">
+</head>
+
+<body>
+  <p>To do List Practice 1</p>
+  <div class="todo-input-grid">
+    <input placeholder="Todo name" class="js-input name-input" onkeydown="if(event.key==='Enter'){
+    todo()
+  }" required>
+
+    <input type="date" class="js-due-date due-date-input" onkeydown="if(event.key==='Enter'){todo()}">
+
+    <button class="add-button add-js">Add</button>
+  </div>
+  <div class="par1 todo-grid"></div>
+
+  <script src="todolist-advanced-function.js"></script>
+
+
+
+</body>
+
+</html>

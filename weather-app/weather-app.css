@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  background: linear-gradient(90deg, #2F3A5A, #0A0D17);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.main-heading {
+  font-size: 4rem;
+  margin: 1rem 0;
+  color: hsl(120, 37%, 40%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.weatherform {
+  margin: 1rem;
+  text-align: center;
+  text-align: center
+}
+
+.city-input {
+  padding: 1rem;
+  font-size: 2rem;
+  border: 2px solid rgba(0, 0, 0, 0.346);
+  border-radius: 0.5rem;
+  font-weight: bold;
+  margin: 1rem;
+  width: 15rem;
+  text-align: center;
+}
+
+button[type="submit"] {
+  color: white;
+  background-color: hsl(120, 37%, 57%);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: hsl(120, 37%, 47%);
+}
+
+.card {
+  border-radius: 1rem;
+  background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  max-width: 15rem;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.564);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h1 {
+
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.cityDisplay,
+.tempDisplay {
+  font-size: 3.5rem;
+  color: hsla(0, 0%, 0%, 0.772);
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.humidityDisplay {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.descriptionDisplay {
+  font-style: italic;
+
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.emojeDisplay {
+  font-size: 7.5rem;
+  margin: 0;
+}
+
+.errorDisplay {
+  color: hsla(0, 0%, 0%, 0.728);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .city-input {
+    width: 90%;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+
+  button[type="submit"] {
+    width: 90%;
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+
+  .card {
+    max-width: 90%;
+    padding: 2rem;
+  }
+
+  .cityDisplay,
+  .tempDisplay {
+    font-size: 2.5rem;
+  }
+
+  .descriptionDisplay {
+    font-size: 1.4rem;
+  }
+
+  .emojeDisplay {
+    font-size: 5rem;
+  }
+
+  .errorDisplay {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .emojeDisplay {
+    font-size: 4rem;
+  }
+}
