@@ -484,13 +484,14 @@ form textarea {
   }
 
   #header {
-    padding-top: 15rem;
+    padding-top: 5rem;
   }
 
   .header-text {
     flex-direction: column-reverse;
     text-align: center;
     align-items: center;
+    margin-top: 0;
   }
 
   nav .fas {
