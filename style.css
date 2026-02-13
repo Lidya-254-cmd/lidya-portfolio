@@ -72,8 +72,25 @@ nav {
 }
 
 .logo {
-  width: 15rem;
+  width: 10rem;
   height: 8rem;
+}
+
+.call-action {
+  text-decoration: none;
+  color: white;
+
+  padding: 0.3rem;
+  border: 0.1rem solid var(--accent);
+  border-radius: 10%;
+}
+
+.call-action:hover {
+  background: var(--accent);
+  padding: 0.5rem 0.7rem;
+  border-radius: 10%;
+  color: #ff004f;
+  font-weight: bold;
 }
 
 nav ul {
