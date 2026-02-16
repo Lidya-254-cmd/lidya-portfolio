@@ -82,15 +82,16 @@ nav {
 
   padding: 0.3rem;
   border: 0.1rem solid var(--accent);
-  border-radius: 10%;
+  border-radius: 1rem;
+  transition: 0.5s ease;
 }
 
 .call-action:hover {
   background: var(--accent);
-  padding: 0.5rem 0.7rem;
-  border-radius: 10%;
-  color: #ff004f;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
   font-weight: bold;
+  transform: translateY(-1rem);
 }
 
 nav ul {
@@ -170,6 +171,7 @@ nav .fas {
   background: linear-gradient(135deg, #6a5cff, var(--accent-soft), #b76bff);
   box-shadow: 0 0 25px rgba(93, 240, 255, 0.6),
     0 0 50px rgba(183, 107, 255, 0.4);
+  transition: 1s ease;
 }
 
 .avatar img {
@@ -177,11 +179,12 @@ nav .fas {
   height: 99%;
   border-radius: 50%;
   object-fit: cover;
+  transition: 1s ease;
 }
 
 .avatar:hover {
   transform: translateY(-18px);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .avatar:hover::before {
@@ -298,14 +301,30 @@ nav .fas {
   margin-top: var(--space-sm);
   display: inline-block;
   text-decoration: none;
+  color: var(--danger);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: 0.3s ease;
+}
+
+.services-list a:hover {
   color: var(--text-primary);
+  padding: 0.5rem 1.5rem;
+  transform: translateX(-5px);
+}
+
+
+.services-list .prices {
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
 .fas {
   font-size: 3rem;
   margin-bottom: var(--space-sm);
-
 }
+
 
 /* =========================
    PORTFOLIO
@@ -316,7 +335,7 @@ nav .fas {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: var(--space-md);
 }
 
@@ -324,11 +343,13 @@ nav .fas {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-md);
+  aspect-ratio: 16 / 9;
 }
 
 .work img {
   width: 100%;
   transition: transform var(--transition);
+  object-fit: cover;
 }
 
 .work:hover img {
@@ -353,7 +374,9 @@ nav .fas {
   margin-top: var(--space-sm);
   display: inline-block;
   text-decoration: none;
-  color: var(--text-primary);
+  color: var(--danger);
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .work:hover .layer {
