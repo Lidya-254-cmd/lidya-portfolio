@@ -1,5 +1,15 @@
 body {
   font-family: Arial;
+  background-color: hsl(0, 0%, 10%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 .todo-grid,
@@ -22,24 +32,27 @@ body {
   padding: 10px;
 }
 
-.add-button {
-  background-color: green;
-  border: none;
-  padding: 10px;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
+button {
+  font-size: 1.5rem;
   font-weight: bold;
+  padding: 1rem 2.5rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  width: 90%;
+  text-align: center;
+}
+
+.add-button {
+  background-color: hsl(125, 47%, 54%);
+  padding: 1rem 2.5rem;
 }
 
 .delete-button {
-  background-color: darkred;
-  border: none;
-  font-size: 15px;
-  padding: 10px;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
+  background-color: hsl(10, 90%, 50%);
+
 }
 
 @media (max-width: 768px) {
